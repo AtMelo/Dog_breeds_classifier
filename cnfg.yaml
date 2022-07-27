@@ -1,0 +1,22 @@
+folder2label: {
+                n02086240='Shih-Tzu',
+                n02087394='Rhodesian ridgeback',
+                n02088364='Beagle',
+                n02089973='English foxhound',
+                n02093754='Australian terrier',
+                n02096294='Border terrier',
+                n02099601='Golden retriever',
+                n02105641='Old English sheepdog',
+                n02111889='Samoyed',
+                n02115641='Dingo'
+}
+
+path_dataset: 'imagewoof2'
+train_dir: 'imagewoof2/train'
+test_dir: 'imagewoof2/val'
+
+# output statistics of all data
+mean_all_data: [0.4874, 0.4571, 0.3951]
+std_all_data: [0.2596, 0.2522, 0.2613]
+
+batch_size: 64
