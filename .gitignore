@@ -1,3 +1,5 @@
+.git/
+.pytest_cache/
 imagewoof2/
 __pycache__/
-
+token.txt
