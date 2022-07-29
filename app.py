@@ -4,6 +4,7 @@ import torchvision
 import torchvision.transforms as tt
 from torchvision.datasets import ImageFolder
 import matplotlib.pyplot as plt
+import os
 import yaml
 from PIL import Image
 
@@ -88,8 +89,7 @@ def handle_docs_photo(message):
 
         file_info = bot.get_file(message.photo[len(message.photo) - 1].file_id)
         downloaded_file = bot.download_file(file_info.file_path)
-        path_dir = '/home/anton/PycharmProjects/Dog_breeds_classifier' \
-                   '/Load_imgs/'
+        path_dir = os.getcwd()
         src = path_dir + file_info.file_path
         with open(src, 'wb') as new_file:
             new_file.write(downloaded_file)
